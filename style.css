@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.container .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.container .image .intro{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    object-fit: fill;
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+
+}
+
+.container .image:hover .intro{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    transition: all ease .3s;
+    opacity: 0.5;
+}
+.bnm{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
